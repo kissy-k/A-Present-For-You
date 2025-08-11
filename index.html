@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> A Present For You</title>
+        <style> 
+            ::-webkit-scrollbar {width: 16px;} 
+            ::-webkit-scrollbar-corner {background: #eee;}
+            ::-webkit-scrollbar-track:vertical {background: linear-gradient(90deg, #e5e5e5, #f0f0f0 20%);}
+            ::-webkit-scrollbar-thumb:vertical {border: 1.5px solid #888;
+                border-radius: 3px;
+                box-shadow: inset 0 -1px 1px #fff, inset 0 1px #fff;
+                background-color: #eee;}
+            ::-webkit-scrollbar-thumb:vertical {
+                background: url("https://dl.dropbox.com/s/9a29qbkza3gmgl7/scroll1.png"), linear-gradient(90deg, #eee 45%, #ddd 0, #ddd);
+        background-repeat: no-repeat;
+        background-size: 65% auto, cover;
+        background-position: center;}
+        ::-webkit-scrollbar-button:vertical:end:increment,
+        ::-webkit-scrollbar-button:vertical:start:decrement {display: block}
+
+        ::-webkit-scrollbar-button:vertical {height: 15px}
+        ::-webkit-scrollbar-button:vertical:start:decrement {background: white;
+        background: url("https://dl.dropbox.com/s/n9ji42h9hdgdtpc/scroll3.png"), linear-gradient(90deg, #e5e5e5, #f0f0f0 20%);
+        background-repeat: no-repeat;
+        background-position: center;
+    -moz-background-size: 100% auto, cover;
+    -webkit-background-size: 100% auto, cover;
+    -o-background-size: 100% auto, cover;
+    background-size: 100% auto, cover;
+    background-position: center;
+    border-radius: 0 3px 0 0;}
+    ::-webkit-scrollbar-button:vertical:start:increment {display: none;}
+    ::-webkit-scrollbar-button:vertical:end:decrement {display: none;}
+
+    ::-webkit-scrollbar-button:vertical:end:decrement {background: white;
+    background: url("https://dl.dropbox.com/s/cdcco6pih7n1lae/scroll4.png"), linear-gradient(90deg, #e5e5e5, #f0f0f0 20%);
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: 100% auto, cover;
+    -webkit-background-size: 100% auto, cover;
+    -o-background-size: 100% auto, cover;
+    background-size: 100% auto, cover;
+    background-position: center;
+    border-radius: 0 0 3px 0;}
+
+   @-webkit-keyframes slide-in-bottom { 0%
+   {-webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+    opacity: 0;} 
+    100% {-webkit-transform: translateY(0);
+            transform: translateY(0);
+        opacity: 1;} }
+    @keyframes slide-in-bottom { 0%
+        {-webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+        opacity: 0;}
+    100% {-webkit-transform: translateY(0);
+            transform: translateY(0);
+        opacity: 1;} }
+
+.section
+    {font-family: 'Times New Roman';
+    color: black;
+    font-size: 1em;
+    background: rgb(77, 70, 154);
+    border: 3px solid rgb(55, 49, 115);
+    padding: 5px;
+    width: 330px;
+    height: 250px;
+    overflow-y: scroll;
+    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.960) both;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450,0.960) both;}
+
+.main 
+{ border: 1px solid rgb(47, 77, 114);
+    background-image: url(https://cdn.wallpapersafari.com/5/64/bUKrna.jpeg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    margin: auto;
+    margin-top: 50px;
+    width: 600px;
+    height: 800px;
+    position: relative;
+    padding: 5px;
+    z-index: 4;
+    box-shadow: 0rem -0rem 2rem #6c50f7; }
+
+.button-container
+{position: absolute;
+    top: 10.5em;
+    left: 2em;
+    height: 200px;
+    width: 100px;
+    z-index: 5;}
+button{
+    border-right: 3px solid rgb(0, 0, 0);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 10px 10px 10px 10px;
+    border-left: none;
+    padding: 3px 6px;
+    background: rgb(0, 0, 0);
+    height: 25px;
+    width: 150px;}
+
+
+button img {
+    position: relative;
+    top: -7px;
+    left: -5px;}
+
+button span {
+    position: relative;
+    top: -10px;}
+
+.outer {
+    border-width: 10px;
+    border-style: solid;
+    border-image: url(https://dl.dropbox.com/scl/fi/6wo0voidugxmgg0a81v20/lace-border-png-37013.png?rlkey=3hn4k762e8y0v6d2v6mwrtcbr&st=5o8bpex4) 60 fill round;
+    width: 94.5%;
+    height: 62.5%;
+}
+
+.inner {
+    width: 100%;
+    height: 150px;
+    background-image: url(https://dl.dropbox.com/scl/fi/f46ir4fuigf489zf6099o/download-4.jpeg?rlkey=x16pa3vze23eimfi2pmfk578m&st=tkjwswc5&dl=0);
+    background-size: cover;
+}
+
+.music-player {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    width: 250px;
+}
+
+h2, p {text-align: center; margin: 5px 0;}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.controls button {
+    border: none;
+    padding: 10px 14px;
+    margin: 0 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+    transition: transform 0.1s; background: 0.2s;
+}
+
+.controls button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);}
+
+#play-btn {
+    background-color: rgb(0, 0, 0);
+}
+
+#pause-btn {
+    background-color: black;
+}
+
+
+#stop-btn {
+    background-color: black;
+}
+
+.controls button:nth-child(3) {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#progress, #volume {
+    width: 100%;
+    margin-top: 10px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    outline: none;
+    appearance: none;
+}
+
+#progress::-webkit-slider-thumb,
+#volume::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff4081;
+    cursor: pointer;
+}
+        
+        </style>
+     <div class="main">
+        <img src= 'https://dl.dropbox.com/scl/fi/6h603tmzkuvrozo5d1gum/download-1.gif?rlkey=bmjnwenu742g7s0wfkvn4tmsa&st=wdjup8j3&dl=0'
+    style="width: 100%; height: 150px; object-fit: fill; position: absolute; top: 0; left: 0; right: 0; margin: 0 auto;">
+        <img src="https://dl.dropbox.com/scl/fi/7r7i1upzgafszrbgn1avn/animated.gif?rlkey=11gi94avajomqi5q200asvixx&st=gr57zvu4&dl=0"
+    style="width: 100%; height: 15px; object-fit: fill; position: absolute; top: 150px; left: 0; right: 0; margin: 0 auto;">
+        <img src="https://media2.ntslive.co.uk/resize/1600x1600/521eb507-e059-4662-bbd6-04ccbaefae69_1676332800.jpeg"
+    style="width: 100%; height: 30px; object-fit: fill; position: absolute; top: 165px; left: 0; right: 0; margin: 0 auto;">
+        <img src="https://dl.dropbox.com/scl/fi/eo5yxp7r9nh7n1kb0y8bb/f87f93197ef5faf0133572592f4dd962.jpg?rlkey=qomumhf64wjw7fe2v15inml0i&st=ury1ovdg&dl=0"
+    style="width: 130px; height: 265px; object-fit: fill; position: absolute; top: 205px; left: 0; right: -10; margin: 0 auto;">
+        <img src="https://dl.dropbox.com/scl/fi/twzfkbbg03rtincc6syqt/ae35e64f50856e29d7382c24ea8d0de4.jpg?rlkey=oflz50hlak0xl1e1nqt3sdbgv&st=mm7qedb7&dl=0"
+    style="width: 136px; height: 265px; object-fit: fill; position: absolute; top: 205px; left: -10; right: 0; margin: 0 auto;">
+        <img src="https://dl.dropbox.com/scl/fi/ggcur5pf84sgfg6dokhpc/download-6.jpeg?rlkey=wcqusrolw4citjnkrg5kkbe4q&st=lssiygi9&dl=0"
+    style="width: 300px; height: 335px; object-fit: fill; position: absolute; top: 475px; left: -10; right: 0; margin: 0 auto;">
+        <img src="https://dl.dropbox.com/scl/fi/bcntob0vwexnay2l27wgz/wallpaper-giyutomioka.jpeg?rlkey=o7dnabgo449yovd5ghni8atv0&st=n6ycmw2a&dl=0"
+    style="width: 309px; height: 130px; object-fit: fill; position: absolute; top: 475px; left: 0; right: -10; margin: 0 auto;">
+
+    <div class="button-container"><button><a onclick="loadpage('page1')"><img src="https://i.imgur.com/nYFepAC.gif" style="width: 24px;"></a><span style="color: white; margin-left: 5px;">ĤᎾMƐ</span></button>
+        
+        <button style="display: inline-block; margin-left: 200px; position: relative; top: -33px;"><a onclick="loadpage('page2')"><img src="https://i.imgur.com/hibzwNY.gif" style="width: 22px; position: relative; top: -6px; left: -7px;">
+        <span style="color: white; margin-left: 2px;">ĿƐŦŦƐŔ</span></a></button>
+
+        <button style="display: inline-block; margin-left: 400px; position: relative; top: -65px;"><a onclick="loadpage('page3')"><img src="https://i.imgur.com/HuSjLvP.gif" style="width: 22px; position: relative; top: -6px; left: -5px;">
+        <span style="color: white; margin-left: 2px;">SᎾИƓS</span></a></button>
+     </div>
+
+     <div class="music-player">
+        <h2>Mrs. Magic</h2>
+        <p>Strawberry Guy</p>
+           <audio id="audio" src="https://dl.dropbox.com/scl/fi/us9h4v8g3mh9d7qo6w5s5/Strawberry-Guy-Mrs-Magic-Strings-Version.mp3?rlkey=2mb37duf27dj3zgtmzet2h5ko&st=cktydi4g&dl=0"></audio>
+
+        <div class="controls">
+            <button id="play-btn">▶</button>
+            <button id="pause-btn">⏸</button>
+            <button id="stop-btn">↺</button>
+        </div>
+        <input type="range" id="progress" value="0" max="100">
+        <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+     </div>
+
+         <div id="content" style="margin-top: 200px; margin-left: 125px; position: relative;">
+    </div>
+
+<script>
+    const pages = {
+        page1: '<div class="section"><div class= "outer"><div class= "inner"</div></div><br><br><div><a href="https://www.glitter-graphics.com/myspace/text_generator.php" target=_blank><img src="https://text.glitter-graphics.net/spblue/h.gif" border=0 width= 15><img src="https://text.glitter-graphics.net/spblue/a.gif" border=0 width= 15><img src="https://text.glitter-graphics.net/spblue/p.gif" border=0 width= 13><img src="https://text.glitter-graphics.net/spblue/p.gif" border=0 width= 13><img src="https://text.glitter-graphics.net/spblue/y.gif" border=0 width=13><img src="https://dl3.glitter-graphics.net/empty.gif" width=15 border=0><img src="https://text.glitter-graphics.net/spblue/b.gif" border=0 width= 25><img src="https://text.glitter-graphics.net/spblue/i.gif" border=0 width= 15><img src="https://text.glitter-graphics.net/spblue/r.gif" border=0 width= 30><img src="https://text.glitter-graphics.net/spblue/t.gif" border=0 width= 20><img src="https://text.glitter-graphics.net/spblue/h.gif" border=0 width= 30><img src="https://text.glitter-graphics.net/spblue/d.gif" border=0 witdh= 100><img src="https://text.glitter-graphics.net/spblue/a.gif" border=0 width= 25><img src="https://text.glitter-graphics.net/spblue/y.gif" border=0 width= 25><img src="https://dl3.glitter-graphics.net/empty.gif" width=20 border=0><img src="https://dl3.glitter-graphics.net/empty.gif" width=20 border=0><img src="https://dl3.glitter-graphics.net/empty.gif" width=10 border=0></a></div><div>Happy birthday gurlll! i am not a big fan of the happy birthday sign up there.😞 Anyhow, this is the intro page click on the gifs at the top to get to the other pages.</div>',
+    page2: '<div class="section">Dear Sev,<br> Happy birthday! You are now fifteen, damn girl i forgot that you were fourteen damnnnn! Man i really thought you were already fifteen it felt that way i dont know~~~. Anyhow lets sing you the bday song!!! Happy birthday to you~~~ Happy birthday to you!!! HAPPY BIRTHDAY DEAR SEVY!!! HAPPY BIRTHDAY TO YOU!!! Sevy darling  now you are fifteen cause i sang for you yerpp!!! Anyhow, baby you are the most funniest person i know!!! (Thats right you are funnier then me.) You have the most beautiful eyes like, the most prettiest voice like its sooooooo cute! And you are sooooo cute!!!! I love your cute lil complaining its so cute MUAH!!! I love learning about you and i love learning about your culture! I really have fun learning about things that make me closer to you! A message from you really brigthens up my dayyyy! I really look forward to your messages every single day! I love talking to you, i love your silly side, your flirty side, your angery side, all the side you have! Who knew that we would be this close in a few months, i would have never imangined it that the shy people that we were on day one would turn into our current selves. I am really happy that i reached out to you on that day, it makes me really really happy! I hope you have the same amount of fun that i have with you. And stay healthy dont eat spoiled food (i know that you dont do that anymore but stil!!!) dont go into any more rains!!! I dont want you to be sickkkkkk, and yeah just have a really happy and fun day and days ahead of you. Dont stress okii bebe? (Or else you will go bald we dont need you to go bald!!!) <br> XOXO <br> Your wifey! </div>',
+        page3: '<div class="section">' +
+            '<h3> Your lil presents💖</h3>' +
+            '<ul>' +
+                '<li><a href= "https://open.spotify.com/playlist/2NyYEBOLrtgVdX1FiaDPG2?si=58b5613ca4b14f7a">The first playlist, I gave you~</a>' +
+                    '<li><a href= "https://open.spotify.com/playlist/5lpQXDv3D5eEo0MAPatLsv?si=34a531db2edc45d5">Rock and roll! Your bannger playlist?...</a>' +
+                        '<li><a href= "https://open.spotify.com/playlist/4XpWCxeUcVAoGyouEixLMu?si=af527eba501f47f8">Your Softie playlist</a>' +
+            '</ul>' +
+        '</div>'
+    };
+       function loadpage(pagekey) {
+         document.getElementById('content').innerHTML = pages[pagekey];
+       }
+
+       loadpage('page1');
+</script>
+
+<script>
+    const audio = document.getElementById("audio");
+const playBtn = document.getElementById("play-btn");
+const pauseBtn = document.getElementById("pause-btn");
+const stopBtn = document.getElementById("stop-btn");
+const progress = document.getElementById("progress");
+const volume = document.getElementById("volume");
+
+playBtn.addEventListener("click", () => {
+    audio.play();
+});
+
+pauseBtn.addEventListener("click", () => {
+    audio.pause();
+});
+
+stopBtn.addEventListener("click", () => {
+    audio.pause();
+    audio.currentTime = 0;
+});
+
+audio.addEventListener("timeupdate", () => {
+    progress.value = (audio.currentTime / audio.duration) * 100;
+});
+
+progress.addEventListener("input", () => {
+    audio.currentTime = (progress.value / 100) * audio.duration;
+});
+
+volume.addEventListener("input", () => {
+    audio.volume = volume.value;
+});
+</script>
+        </style>
+
+    </div>
+</head>
+<body style="background-image: url('http://dl8.glitter-graphics.net/pub/2146/2146918qltrmujt3f.jpg'); background-attachment: fixed; background-repeat: repeat;">
+</body>
+</html>
